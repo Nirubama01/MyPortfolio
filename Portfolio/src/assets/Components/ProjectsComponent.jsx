@@ -17,7 +17,7 @@ const ProjectsComponent = () => {
   ];
   const fetchProjects=async()=>{
     try{
-      const response = await fetch('http://localhost:5000/api/projects');
+      const response = await fetch("http://65.2.207.141:5000/api/projects");
       const data = await response.json();
       setProjects(data?.data);
       console.log("Projects fetched:", data);
